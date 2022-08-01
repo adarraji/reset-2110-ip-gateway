@@ -57,16 +57,19 @@ pyinstaller will create a folder `build`. In this folder you will fiind the excu
 
 ![Image 1](./images/image-01.png)
 
+</br>
 
 **The configuration csv file exported from the ip gateway system and used as input to this application**
 
 ![Image 1](./images/image-02.png)
 
+</br>
 
 **Example of logs file in case of success**
 
 ![Image 1](./images/image-03.png)
 
+</br>
 
 **Example of logs file in case of connection error**
 
