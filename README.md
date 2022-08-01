@@ -31,6 +31,9 @@ pyinstaller.exe --onefile --icon=warning.ico --windowed  reset-ip-gateway.py
 
 pyinstaller will create a folder `build`. In this folder you will fiind the excutable file `.exe`.
 
+</br>
+</br>
+
 ## Built With
 
 * Python 3.7.9.
@@ -38,11 +41,15 @@ pyinstaller will create a folder `build`. In this folder you will fiind the excu
 * Python requests library.
 * [PyInstaller](https://pyinstaller.org/en/stable/) to bundle the application.
 
+</br>
+</br>
 
 ## Authors
 
 - **Ali Darraji** - [https://github.com/adarraji](https://github.com/adarraji)
 
+</br>
+</br>
 
 ## Screenshots
 
