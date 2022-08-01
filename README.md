@@ -61,4 +61,10 @@ pyinstaller will create a folder `build`. In this folder you will fiind the excu
 ![Image 1](./images/image-03.png)
 
 
+**Example of logs file in case of connection error**
+
+![Image 1](./images/image-04.png)
+
+
+
 
