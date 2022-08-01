@@ -2,6 +2,7 @@ venv/
 logs/
 __pycache__/
 build/
+dist/
 *.manifest
 *.spec
 flow_config.csv

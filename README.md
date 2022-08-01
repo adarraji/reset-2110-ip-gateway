@@ -29,6 +29,8 @@ pip install -r requirements.txt
 pyinstaller.exe --onefile --icon=warning.ico --windowed  reset-ip-gateway.py
 ```
 
+pyinstaller will create a folder `build`. In this folder you will fiind the excutable file `.exe`.
+
 ## Built With
 
 * Python 3.7.9.
