@@ -1,0 +1,7 @@
+venv/
+logs/
+__pycache__/
+build/
+*.manifest
+*.spec
+flow_config.csv
