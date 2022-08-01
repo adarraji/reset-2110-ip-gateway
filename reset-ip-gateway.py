@@ -14,7 +14,6 @@ import os
 from datetime import datetime
 import csv
 
-// 
 if not os.path.exists("logs"):
     os.mkdir("logs")
 
