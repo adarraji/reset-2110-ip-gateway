@@ -17,13 +17,13 @@ To run the application
 1. Download and install python. You can find python download website [here](https://www.python.org/downloads/) 
 2. Make sure to select "Add Python x.x tp PATH" during the installation.
 3. Optional: Create pytohn virtal environment and activate. More information [here](https://docs.python.org/3/tutorial/venv.html)
-3. Install python packages form `requirements.txt`
+4. Install python packages form `requirements.txt`
 
 ```python
 pip install -r requirements.txt 
 ```
 
-4. Run the following to bundle the Python application and all its dependencies into a single package.
+5. Run the following to bundle the Python application and all its dependencies into a single package.
 
 ```python
 pyinstaller.exe --onefile --icon=warning.ico --windowed  reset-ip-gateway.py
