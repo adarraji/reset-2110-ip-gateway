@@ -14,6 +14,7 @@ import os
 from datetime import datetime
 import csv
 
+# Log folder and log file
 if not os.path.exists("logs"):
     os.mkdir("logs")
 
@@ -21,6 +22,7 @@ logger = logging.getLogger()
 handlr = logging.FileHandler("logs/log_{}.log".format(datetime.now().strftime("%Y_%m_%d_%H_%M")))
 logger.addHandler(handlr)
 
+# create tkinter instance
 root = Tk()
 
 system_reset_body = {"reboot": "1", "config_reset": "0", "staging_mode": 0}
@@ -28,6 +30,9 @@ system_reset_body = {"reboot": "1", "config_reset": "0", "staging_mode": 0}
 
 
 def get_ip_list():
+    """
+    get list of device IP addresses from flow_config.csv file
+    """
     ip_list = []
 
     with open("flow_config.csv", "r") as csv_file:
@@ -40,6 +45,14 @@ def get_ip_list():
 
 
 def req(host, resource, method="get", jsonbody=None, params=None):
+    """Helper function to handle HTTP requests.
+    Arg:
+        host: ip address/hostname of the device
+        reource: path to resource in REST API
+        method: HTTP method type. Default is "get"
+        jsonbody: HTTP request body
+        params: HTTP request parameters
+    """
     headers = {
         "Accept": "application/json",
         "Content-Type": "application/json",
@@ -82,14 +95,20 @@ def req(host, resource, method="get", jsonbody=None, params=None):
 
 
 def myClick():
+    """
+    function to handle button click.
+    It uses req fucntion to send reboot HTTP requests to devices
+    """
     for host in get_ip_list():
         req(host, "self/system", method="PUT", jsonbody=system_reset_body)
 
 
+# tkinter root element
 root.geometry("400x200")
 root.resizable(False, False)
 root.title("RESET")
 
+# create button
 myButton = Button(root, text="RESET", padx=50, pady=20, command=myClick, fg="white", bg="#801515")
 myButton.place(relx=0.5, rely=0.5, anchor=CENTER)
 
