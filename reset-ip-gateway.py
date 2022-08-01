@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from tkinter import *
 from tkinter import messagebox
 import json
@@ -7,7 +9,7 @@ import os
 from datetime import datetime
 import csv
 
-
+// 
 if not os.path.exists("logs"):
     os.mkdir("logs")
 
