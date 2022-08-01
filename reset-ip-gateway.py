@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+"""
+Author: Ali Darraji
+Purpose: Rboot multiple ST 2110 SDI-IP gateways with one button click.
+"""
+
 from tkinter import *
 from tkinter import messagebox
 import json
