@@ -20,7 +20,7 @@ To run the application
 3. Install python packages form `requirements.txt`
 
 ```python
-pip install requirements.txt 
+pip install -r requirements.txt 
 ```
 
 4. Run the following to bundle the Python application and all its dependencies into a single package.
