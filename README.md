@@ -14,7 +14,7 @@ It creates a log file in `logs` folder after everytime the button is clicked sho
 
 To run the application
 
-1. Download and intall python. You can find python download website [here](https://www.python.org/downloads/) 
+1. Download and install python. You can find python download website [here](https://www.python.org/downloads/) 
 2. Make sure to select "Add Python x.x tp PATH" during the installation.
 3. Install python packages form `requirements.txt`
 
