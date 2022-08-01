@@ -16,6 +16,7 @@ To run the application
 
 1. Download and install python. You can find python download website [here](https://www.python.org/downloads/) 
 2. Make sure to select "Add Python x.x tp PATH" during the installation.
+3. Optional: Create pytohn virtal environment and activate. More information [here](https://docs.python.org/3/tutorial/venv.html)
 3. Install python packages form `requirements.txt`
 
 ```python
