@@ -8,9 +8,7 @@ The configuration file exported from the IP gateway management system as csv fil
 
 This Python application processes the csv file `flow_config.csv` and gets a list of device IP adddresses. Then it sends a reboot HTTP request for each device.
 
-It creates a log file in `logs` folder after everytime the button is clicked showing the HTTP request status (Sucess/Error) for every device.
-
-
+It creates a log file in `logs` folder after everytime the button is clicked showing the HTTP request status (Sucess/Error) for every device.</br>
 
 To run the application
 
